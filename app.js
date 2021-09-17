@@ -1,22 +1,25 @@
 
 //recuperation des donnees Json
 
-var myInit = { method: 'GET',
-           headers: {
-               'Content-Type': 'application/json'
-           },
-          mode:'cors',
-          cache: 'default' };        
+let myInit = {
+  method: 'GET',
+  headers: {
+    Accept: 'application/json',
+    'Content-type': 'application/json',
+  },
+  mode: 'cors',
+  cache: 'default',
+};      
 
 
 
-let myRequest = new Request ("./app.json", myInit);
+let myRequest = new Request ("./data.json", myInit);
 
-fetch(myRequest)
+fetch("./data.json")
   .then(function(resp){
       return resp.json();
   })
-  .then (function(app){
-   console.log(app.photographers);
+  .then (function(data){
+   console.log(data.photographers);
   });
     

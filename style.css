@@ -3,7 +3,8 @@
 }
 
 body{
-  margin: 0;  
+  margin: 0;
+  padding: 0;  
 }
 
 .header_wrapper {
@@ -19,6 +20,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: baseline;
 }
 .tag{
     margin: 1.5rem;
@@ -30,16 +32,56 @@ body{
     text-decoration: none;
     padding-top: 0.1rem;
     padding-left: .20rem;
-    padding-bottom: 0.2rem;
+    /* padding-bottom: 0.1rem; */
     padding-right: 0.1rem;
     color: rgba(144, 28, 28);
 
     
 }
 .header-navigation-title{
-   
+     font-size: 30px; 
+    margin-left: 10px; 
+    
+
 }
 h1{
     color:rgba(144,28,28);
-     font-size: .60rem; 
 } 
+
+.photographer_text_location,
+.photographer_text_slogan,
+.photographer_text_due{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photographer_text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid > div {
+    border: 3px solid #ccc;
+    background-color: #999;
+    padding: .3rem;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: minmax(100px, auto);
+    grid-column-gap: 2rem;
+    grid-gap: 10px;
+}
+
+.col4{
+    grid-column-end: span 4;
+    
+}
+
+.col2{
+    grid-column-end: span 2;
+}
+.col3{
+    grid-column-end: span 3;
+}
