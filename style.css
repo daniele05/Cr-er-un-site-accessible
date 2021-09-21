@@ -7,7 +7,7 @@ body{
   padding: 0;  
 }
 
-.header_wrapper {
+.header {
     display: flex;
     flex-direction: row;
     margin-bottom: .5rem;
@@ -61,27 +61,21 @@ h1{
     align-items: center;
 }
 .grid > div {
-    border: 3px solid #ccc;
     background-color: #999;
-    padding: .3rem;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 30px;
 }
 
-.grid{
+.grid-container{
     display: grid;
+    border: 3px solid rgb(0, 4, 255);
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: minmax(100px, auto);
-    grid-column-gap: 2rem;
-    grid-gap: 10px;
+    grid-template-rows: minmax( 100px);
+    grid-column-gap: 6rem;
+    grid-gap: 40px;
+    height: 400px;
+    align-items: center;
+    background: color #f2f2f2;
 }
 
-.col4{
-    grid-column-end: span 4;
-    
-}
-
-.col2{
-    grid-column-end: span 2;
-}
-.col3{
-    grid-column-end: span 3;
-}
